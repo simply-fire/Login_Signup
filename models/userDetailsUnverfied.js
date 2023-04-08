@@ -12,8 +12,11 @@ const LSschema = new mongoose.Schema({
         type: String,
         // required: [true, 'Enter a valid password'],
         unique: true
+    },
+    name: {
+        type: String,
+        unique: true
     }
-
 })
 
 

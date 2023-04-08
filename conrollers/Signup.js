@@ -21,7 +21,8 @@ exports.Signup = async (req, res, next) => {
         else {
             var user_cred = new details_holder({
                 email: req.body.email,
-                password: password_hash
+                password: password_hash,
+                name: req.body.name
             })
 
             user_cred.save()
